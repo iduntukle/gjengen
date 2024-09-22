@@ -12,9 +12,9 @@ export default function slayerPicker(){
         setSlayer(slayers[nextSlayerIndex]);
     }
 
-    function handleClick(): import("react").MouseEventHandler<HTMLButtonElement> | undefined {
+    function handleClick(): void {
         pickNextSlayer();
-        setShowSlayer(true)
+        setShowSlayer(true);
     }
 
     return(
